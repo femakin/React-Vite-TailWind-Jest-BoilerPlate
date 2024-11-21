@@ -1,0 +1,27 @@
+.txtHeading { 
+  @apply text-gray-800 dark:text-gray-100 text-lg font-medium leading-tight
+}
+.txtSubheading { 
+  @apply font-semibold text-gray-700 dark:text-gray-100 leading-tight
+}
+.txtRegular { 
+  @apply text-gray-600 dark:text-gray-100 font-thin leading-tight
+}
+.txtMedium { 
+  @apply text-gray-800 dark:text-gray-100 font-medium leading-tight
+}
+.txtNormal { 
+  @apply text-gray-600 dark:text-gray-100  leading-tight
+}
+.shadowCard {
+  @apply w-full rounded-2xl p-5 bg-white dark:bg-slate-700 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]
+}
+
+.ant-picker .ant-picker-input >input[disabled] {
+  color: rgb(209 213 219) !important;
+}
+
+.ant-select-disabled .ant-select-selector .ant-select-selection-item {
+  color: rgb(209 213 219) !important;
+}
+

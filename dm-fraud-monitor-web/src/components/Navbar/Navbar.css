@@ -1,0 +1,64 @@
+.menu {
+  z-index: 100;
+  background-color: #ffffff;
+  padding: 16px 30px;
+  /* border-bottom: solid 1px #e8e8e8; */
+  overflow: auto;
+  /*    position: fixed; */
+  width: 100%;
+  /* box-shadow: 0 0 30px #f3f1f1; */
+  box-shadow: 0 0 5px #f3f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__logo {
+  width: 150px;
+}
+
+.menu__menus {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.menu__mobile-button {
+  /* float: right;
+    height: 32px;
+    padding: 6px;
+    margin-top: 8px; */
+  display: none !important; /* use of important to overwrite ant-btn */
+}
+
+.menu_drawer .ant-drawer-body {
+  padding: 0 !important;
+}
+
+/* align header of Drawer with header of page */
+.menu_drawer .ant-drawer-header {
+  padding: 14px 24px !important;
+}
+
+@media (max-width: 767px) {
+  .menu__mobile-button {
+    display: inline-block !important;
+  }
+
+  .menu__menus {
+    display: none;
+  }
+
+  .menu__logo a {
+    margin-left: -20px;
+  }
+
+  .menu__container .ant-menu-item,
+  .menu__container .ant-menu-submenu-title {
+    padding: 1px 20px;
+  }
+
+  .menu__logo a {
+    padding: 10px 20px;
+  }
+}

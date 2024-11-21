@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16;
+  }
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::first-letter{
+  text-transform: capitalize
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: #585858;
+}
+
+
+.ant-input:hover  { border-color: #d9d9d9 !important; box-shadow: none !important; }
+.ant-input:focus  { border-color: #d9d9d9 !important; box-shadow: none !important; }
+.ant-input-password:hover  { border-color: #d9d9d9 !important; box-shadow: none !important; }
+
+.ant-select:hover .ant-select-selector { border-color: #d9d9d9 !important; box-shadow: none !important; }
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+.searchInput .ant-input {
+  outline: 0;
+  background-color: rgb(243, 244, 246);
+}
+
+/* Chrome, Safari, Edge, Opera --- hide input type number arrow*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox --- hide input type number arrow */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.toCenterOfPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: rgba(217, 216, 216, 0.4);
+}
+
+.loadingSpinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgb(217, 216, 216);
+  border-bottom-color: #05004E;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+:root {
+  --main: #743374;
+  --black: #001034;
+  --bgColor : #ffffff;
+
+  --darkmain: 255, 255, 255;
+  --darkBgColor : #05004E;
+}

@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    // "types": ["jest"],
+    "target": "es2020",
+    "module": "ESNext",
+    "types": ["@testing-library/jest-dom"],
+    "esModuleInterop": true
+  }
+}
